@@ -45,16 +45,14 @@ pip install shutil
 
 
 ## File arrangement
-The whole projects are regnized as,
-## checkpoints
-
+The whole projects are regnized as shown. Please unzip you download in correct directories
 ```
-── checkpoint
+──checkpoint
   ├── deeplabv3_resnet50_rcg
   ├── deeplabv3_resnet101_rcg
   ├── ...
   └── psp_resnet101_rcg
-── images
+──images
   ├── Caroll_Jul_14_22
   ├── Caroll_Jun_14_22
   ├── ...
