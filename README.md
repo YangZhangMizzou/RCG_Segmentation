@@ -95,69 +95,28 @@ python scripts/infer_big_image.py \
 
 We support multiple models. You can try following backbone and model combinations
 
-|                           Dataset                            | training set | validation set | testing set |
-| :----------------------------------------------------------: | :----------: | :------------: | :---------: |
-| [VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar) |     1464     |      1449      |      ✘      |
-| [VOCAug](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tgz) |    11355     |      2857      |      ✘      |
-| [ADK20K](http://groups.csail.mit.edu/vision/datasets/ADE20K/) |    20210     |      2000      |      ✘      |
-| [Cityscapes](https://www.cityscapes-dataset.com/downloads/)  |     2975     |      500       |      ✘      |
-| [COCO](http://cocodataset.org/#download)           |              |                |             |
-| [SBU-shadow](http://www3.cs.stonybrook.edu/~cvl/content/datasets/shadow_db/SBU-shadow.zip) |     4085     |      638       |      ✘      |
-| [LIP(Look into Person)](http://sysu-hcp.net/lip/)       |    30462     |     10000      |    10000    |
-
 ```
-.{SEG_ROOT}
-├── core
-│   ├── data
-│   │   ├── dataloader
-│   │   │   ├── ade.py
-│   │   │   ├── cityscapes.py
-│   │   │   ├── mscoco.py
-│   │   │   ├── pascal_aug.py
-│   │   │   ├── pascal_voc.py
-│   │   │   ├── sbu_shadow.py
-│   │   └── downloader
-│   │       ├── ade20k.py
-│   │       ├── cityscapes.py
-│   │       ├── mscoco.py
-│   │       ├── pascal_voc.py
-│   │       └── sbu_shadow.py
+fcn8s+vgg16
+fcn16s+vgg16
+fcn32s+vgg16
+psp_resnet50
+psp_resnet101
+deeplabv3+resnet50
+deeplabv3+resnet101
 ```
 
 ## Result
-- **PASCAL VOC 2012**
-
-|Methods|Backbone|TrainSet|EvalSet|crops_size|epochs|JPU|Mean IoU|pixAcc|
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|FCN32s|vgg16|train|val|480|60|✘|47.50|85.39|
-|FCN16s|vgg16|train|val|480|60|✘|49.16|85.98|
-|FCN8s|vgg16|train|val|480|60|✘|48.87|85.02|
-|FCN32s|resnet50|train|val|480|50|✘|54.60|88.57|
-|PSPNet|resnet50|train|val|480|60|✘|63.44|89.78|
-|DeepLabv3|resnet50|train|val|480|60|✘|60.15|88.36|
-
-Note: `lr=1e-4, batch_size=4, epochs=80`.
-
-## Overfitting Test
-See [TEST](https://github.com/Tramac/Awesome-semantic-segmentation-pytorch/tree/master/tests) for details.
-
+Our software generate the following outputs if you choose to evaluate.
 ```
-.{SEG_ROOT}
-├── tests
-│   └── test_model.py
+image_resize.png -> 10 times resacled original image for esay view
+prediction.png -> mask label(1 for RCG and 0 for background)
+prediction_resize.png -> 10 times resacled mask for esay view
+painting.png -> colored mask which indicates tp,fp and fn.
 ```
 
-## To Do
-- [x] add train script
-- [ ] remove syncbn
-- [ ] train & evaluate
-- [x] test distributed training
-- [x] fix syncbn ([Why SyncBN?](https://tramac.github.io/2019/02/25/%E8%B7%A8%E5%8D%A1%E5%90%8C%E6%AD%A5%20Batch%20Normalization[%E8%BD%AC]/))
-- [x] add distributed ([How DIST?]("https://tramac.github.io/2019/03/06/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%AD%E7%BB%83-PyTorch/"))
-<!--
-- [x] fix syncbn ([Why SyncBN?](https://tramac.github.io/2019/04/08/SyncBN/))
-- [x] add distributed ([How DIST?](https://tramac.github.io/2019/04/22/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%AD%E7%BB%83-PyTorch/))
--->
+Here is an example of painting.png image.
+<p align="center"><img width="50%" src="result/fcn8s_vgg16/Chariton_Jun_8_22/90_p4/painting.png" /></p>
+
 ## References
 - [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding)
 - [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
