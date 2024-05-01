@@ -65,7 +65,7 @@ The whole projects are regnized as shown. Please unzip you download in correct d
 We also provided our training and test dataset. You can download them using this link.
 
 
-### Inference:
+## Inference:
 Once you have the input file ready and in correct virtual env, you can use the file **scripts/infer_big_image.py** to start inference the images:
 quick example(full command):
 ```
