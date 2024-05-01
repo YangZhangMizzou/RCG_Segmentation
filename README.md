@@ -93,12 +93,7 @@ python scripts/infer_big_image.py \
 
 #### Support models
 
-You can run script to download dataset, such as:
-
-```
-cd ./core/data/downloader
-python ade20k.py --download-dir ../datasets/ade
-```
+We support multiple models. You can try following backbone and model combinations
 
 |                           Dataset                            | training set | validation set | testing set |
 | :----------------------------------------------------------: | :----------: | :------------: | :---------: |
