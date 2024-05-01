@@ -8,14 +8,16 @@ Reed Canary grass is an invasive species that poses a significant threat to the 
 ## Installation
 
 ```
-# semantic-segmentation-pytorch dependencies
-pip install ninja tqdm
+# Copy from github
+git clone https://github.com/Tramac/awesome-semantic-segmentation-pytorch.git
 
-# follow PyTorch installation in https://pytorch.org/get-started/locally/
+# Install pytorch
 conda install pytorch torchvision -c pytorch
 
-# install PyTorch Segmentation
-git clone https://github.com/Tramac/awesome-semantic-segmentation-pytorch.git
+# Other dependencies
+Please install all packages mentioned in requirement.txt
+
+
 ```
 
 ## Usage
