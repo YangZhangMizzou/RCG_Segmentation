@@ -1,6 +1,6 @@
 # RCG Segmentation Software
 
-Reed Canary grass if an invaded species which cause great harm to environment balance in Missouri Wetlands.
+Reed Canary grass is an invasive species that poses a significant threat to the environmental equilibrium of Missouri Wetlands. This project offers pretrained semantic segmentation models capable of effectively and accurately identifying Reed Canary grass areas within high-resolution imagery. 
 
 
 <p align="center"><img width="50%" src="docs/RCG.jpeg" /></p>
