@@ -45,18 +45,18 @@ pip install shutil
 
 
 ## File arrangement
-
+The whole projects are regnized as,
 ## checkpoints
-The checkpoints are regnized as,
+
 ```
-checkpoint
-├── deeplabv3_resnet50_rcg
-├── deeplabv3_resnet101_rcg
-├── fcn8s_vgg16_rcg
-├── fcn16s_vgg16_rcg
-├── fcn32s_vgg16_rcg
-├── psp_resnet50_rcg
-└── psp_resnet101_rcg
+──checkpoint
+──  ├── deeplabv3_resnet50_rcg
+──  ├── deeplabv3_resnet101_rcg
+──  ├── fcn8s_vgg16_rcg
+──  ├── fcn16s_vgg16_rcg
+──  ├── fcn32s_vgg16_rcg
+──  ├── psp_resnet50_rcg
+──  └── psp_resnet101_rcg
 ```
 
 
