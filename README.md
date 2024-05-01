@@ -30,9 +30,6 @@ conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit
 ```
 ### Install dependencies
 
-Install Detectron2 following the instructions on the website. https://detectron2.readthedocs.io/en/latest/index.html
-and then run the following command
-
 ```
 pip install numpy
 pip install math
