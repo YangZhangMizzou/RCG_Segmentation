@@ -115,7 +115,7 @@ painting.png -> colored mask which indicates tp,fp and fn.
 ```
 
 Here is an example of painting.png image.
-<p align="center"><img width="50%" src="result/fcn8s_vgg16/Chariton_Jun_8_22/90_p4/painting.png" /></p>
+<p align="center"><img width="80%" src="result/fcn8s_vgg16/Chariton_Jun_8_22/90_p4/painting.png" /></p>
 
 ## References
 - [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding)
