@@ -10,7 +10,7 @@ Reed Canary grass is an invasive species that poses a significant threat to the 
 ### Clone the repository
 You can either use the cmd window to clone the repo using the following command
 ```
-git clone Https://github.com/YangZhangMizzou/RCG_Segmentation.git
+git clone https://github.com/YangZhangMizzou/RCG_Segmentation.git
 ```
 
 ### Create virtual environment
@@ -44,21 +44,21 @@ pip install shutil
 ```
 
 
-## Usage
-### Train
------------------
-- **Single GPU training**
-```
-# for example, train fcn32_vgg16_pascal_voc:
-python train.py --model fcn32s --backbone vgg16 --dataset pascal_voc --lr 0.0001 --epochs 50
-```
-- **Multi-GPU training**
+## File arrangement
 
+## checkpoints
+The checkpoints are regnized as,
 ```
-# for example, train fcn32_vgg16_pascal_voc with 4 GPUs:
-export NGPUS=4
-python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py --model fcn32s --backbone vgg16 --dataset pascal_voc --lr 0.0001 --epochs 50
+checkpoint
+├── deeplabv3_resnet50_rcg
+├── deeplabv3_resnet101_rcg
+├── fcn8s_vgg16_rcg
+├── fcn16s_vgg16_rcg
+├── fcn32s_vgg16_rcg
+├── psp_resnet50_rcg
+└── psp_resnet101_rcg
 ```
+
 
 ### Evaluation
 -----------------
