@@ -49,14 +49,16 @@ The whole projects are regnized as,
 ## checkpoints
 
 ```
-──checkpoint
-──  ├── deeplabv3_resnet50_rcg
-──  ├── deeplabv3_resnet101_rcg
-──  ├── fcn8s_vgg16_rcg
-──  ├── fcn16s_vgg16_rcg
-──  ├── fcn32s_vgg16_rcg
-──  ├── psp_resnet50_rcg
-──  └── psp_resnet101_rcg
+── checkpoint
+  ├── deeplabv3_resnet50_rcg
+  ├── deeplabv3_resnet101_rcg
+  ├── ...
+  └── psp_resnet101_rcg
+── images
+  ├── Caroll_Jul_14_22
+  ├── Caroll_Jun_14_22
+  ├── ...
+  └── psp_resnet101_rcg
 ```
 
 
