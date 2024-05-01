@@ -49,15 +49,15 @@ The whole projects are regnized as shown. Please unzip you download in correct d
 ```
 ├──checkpoint
 │   ├── 60_models
-      ├── deeplabv3_resnet50_rcg
-      ├── deeplabv3_resnet101_rcg
-      ├── ...
-      └── psp_resnet101_rcg
+        ├── deeplabv3_resnet50_rcg
+        ├── deeplabv3_resnet101_rcg
+        ├── ...
+        └── psp_resnet101_rcg
 │   ├── 90_models
-      ├── deeplabv3_resnet50_rcg
-      ├── deeplabv3_resnet101_rcg
-      ├── ...
-      └── psp_resnet101_rcg
+        ├── deeplabv3_resnet50_rcg
+        ├── deeplabv3_resnet101_rcg
+        ├── ...
+        └── psp_resnet101_rcg
 
 ──images
   ├── Caroll_Jul_14_22
