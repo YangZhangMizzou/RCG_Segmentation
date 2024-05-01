@@ -47,11 +47,18 @@ pip install shutil
 ## File arrangement
 The whole projects are regnized as shown. Please unzip you download in correct directories
 ```
-──checkpoint
-  ├── deeplabv3_resnet50_rcg
-  ├── deeplabv3_resnet101_rcg
-  ├── ...
-  └── psp_resnet101_rcg
+├──checkpoint
+│   ├── 60_models
+      ├── deeplabv3_resnet50_rcg
+      ├── deeplabv3_resnet101_rcg
+      ├── ...
+      └── psp_resnet101_rcg
+│   ├── 90_models
+      ├── deeplabv3_resnet50_rcg
+      ├── deeplabv3_resnet101_rcg
+      ├── ...
+      └── psp_resnet101_rcg
+
 ──images
   ├── Caroll_Jul_14_22
   ├── Caroll_Jun_14_22
@@ -83,74 +90,8 @@ python scripts/infer_big_image.py \
 --checkpoint_dir ./checkpoint \
 --save_dir ./result \
 ```
-### Demo
-```
-cd ./scripts
-#for new users:
-python demo.py --model fcn32s_vgg16_voc --input-pic ../tests/test_img.jpg
-#you should add 'test.jpg' by yourself
-python demo.py --model fcn32s_vgg16_voc --input-pic ../datasets/test.jpg
-```
 
-```
-.{SEG_ROOT}
-├── scripts
-│   ├── demo.py
-│   ├── eval.py
-│   └── train.py
-```
-
-## Support
-
-#### Model
-
-- [FCN](https://arxiv.org/abs/1411.4038)
-- [ENet](https://arxiv.org/pdf/1606.02147)
-- [PSPNet](https://arxiv.org/pdf/1612.01105)
-- [ICNet](https://arxiv.org/pdf/1704.08545)
-- [DeepLabv3](https://arxiv.org/abs/1706.05587)
-- [DeepLabv3+](https://arxiv.org/pdf/1802.02611)
-- [DenseASPP](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yang_DenseASPP_for_Semantic_CVPR_2018_paper.pdf)
-- [EncNet](https://arxiv.org/abs/1803.08904v1)
-- [BiSeNet](https://arxiv.org/abs/1808.00897)
-- [PSANet](https://hszhao.github.io/papers/eccv18_psanet.pdf)
-- [DANet](https://arxiv.org/pdf/1809.02983)
-- [OCNet](https://arxiv.org/pdf/1809.00916)
-- [CGNet](https://arxiv.org/pdf/1811.08201)
-- [ESPNetv2](https://arxiv.org/abs/1811.11431)
-- [DUNet(DUpsampling)](https://arxiv.org/abs/1903.02120)
-- [FastFCN(JPU)](https://arxiv.org/abs/1903.11816)
-- [LEDNet](https://arxiv.org/abs/1905.02423)
-- [Fast-SCNN](https://github.com/Tramac/Fast-SCNN-pytorch)
-- [LightSeg](https://github.com/Tramac/Lightweight-Segmentation)
-- [DFANet](https://arxiv.org/abs/1904.02216)
-
-[DETAILS](https://github.com/Tramac/awesome-semantic-segmentation-pytorch/blob/master/docs/DETAILS.md) for model & backbone.
-```
-.{SEG_ROOT}
-├── core
-│   ├── models
-│   │   ├── bisenet.py
-│   │   ├── danet.py
-│   │   ├── deeplabv3.py
-│   │   ├── deeplabv3+.py
-│   │   ├── denseaspp.py
-│   │   ├── dunet.py
-│   │   ├── encnet.py
-│   │   ├── fcn.py
-│   │   ├── pspnet.py
-│   │   ├── icnet.py
-│   │   ├── enet.py
-│   │   ├── ocnet.py
-│   │   ├── psanet.py
-│   │   ├── cgnet.py
-│   │   ├── espnet.py
-│   │   ├── lednet.py
-│   │   ├── dfanet.py
-│   │   ├── ......
-```
-
-#### Dataset
+#### Support models
 
 You can run script to download dataset, such as:
 
