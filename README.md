@@ -115,25 +115,12 @@ painting.png -> colored mask which indicates tp,fp and fn.
 ```
 
 Here is an example of painting.png image.
-<p align="center"><img width="80%" src="result/fcn8s_vgg16/Chariton_Jun_8_22/90_p4/painting.png" /></p>
+<p align="center"><img width="100%" src="result/fcn8s_vgg16/Chariton_Jun_8_22/90_p4/painting.png" /></p>
 
 ## References
 - [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding)
 - [maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
 - [gloun-cv](https://github.com/dmlc/gluon-cv)
 - [imagenet](https://github.com/pytorch/examples/tree/master/imagenet)
+- [awesome-semantic-segmentation-pytorch](https://github.com/Tramac/awesome-semantic-segmentation-pytorch.git)
 
-
-
-<!--
-[![python-image]][python-url]
-[![pytorch-image]][pytorch-url]
-[![lic-image]][lic-url]
--->
-
-[python-image]: https://img.shields.io/badge/Python-2.x|3.x-ff69b4.svg
-[python-url]: https://www.python.org/
-[pytorch-image]: https://img.shields.io/badge/PyTorch-1.1-2BAF2B.svg
-[pytorch-url]: https://pytorch.org/
-[lic-image]: https://img.shields.io/badge/Apache-2.0-blue.svg
-[lic-url]: https://github.com/Tramac/Awesome-semantic-segmentation-pytorch/blob/master/LICENSE
