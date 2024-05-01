@@ -58,20 +58,30 @@ The whole projects are regnized as shown. Please unzip you download in correct d
   ├── ...
   └── psp_resnet101_rcg
 ```
+We also provided our training and test dataset. You can download them using this link.
 
 
-### Evaluation
------------------
-- **Single GPU evaluating**
+### Inference:
+Once you have the input file ready and in correct virtual env, you can use the file **scripts/infer_big_image.py** to start inference the images:
+quick example(full command):
 ```
-# for example, evaluate fcn32_vgg16_pascal_voc
-python eval.py --model fcn32s --backbone vgg16 --dataset pascal_voc
+python scripts/infer_big_image.py \
+--path retinanet ./images \
+--altitude 90 \
+--checkpoint_dir ./checkpoint \
+--save_dir ./result \
+--model fcn16s \
+--backbone vgg16 \
+--image_size 512 \
+--evaluate True \
 ```
-- **Multi-GPU evaluating**
+
+quick example(easy command):
 ```
-# for example, evaluate fcn32_vgg16_pascal_voc with 4 GPUs:
-export NGPUS=4
-python -m torch.distributed.launch --nproc_per_node=$NGPUS eval.py --model fcn32s --backbone vgg16 --dataset pascal_voc
+python scripts/infer_big_image.py \
+--path retinanet ./images \
+--checkpoint_dir ./checkpoint \
+--save_dir ./result \
 ```
 ### Demo
 ```
