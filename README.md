@@ -2,7 +2,7 @@
 
 This project aims at providing a concise, easy-to-use, modifiable reference implementation for semantic segmentation models using PyTorch.
 
-<p align="center"><img width="100%" src="docs/RCG.jpeg =250x250" /></p>
+<p align="center"><img width="50%" src="docs/RCG.jpeg" /></p>
 
 ## Installation
 
