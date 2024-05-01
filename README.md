@@ -1,6 +1,7 @@
 # RCG Segmentation Software
 
-This project aims at providing a concise, easy-to-use, modifiable reference implementation for semantic segmentation models using PyTorch.
+Reed Canary grass if an invaded species which cause great harm to environment balance in Missouri Wetlands.
+
 
 <p align="center"><img width="50%" src="docs/RCG.jpeg" /></p>
 
